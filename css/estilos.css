@@ -1,0 +1,131 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+       
+}
+
+.footer { 
+    background: rgb(18, 18, 19);
+    width: 100%;
+    color: #f1f1e9;
+    margin:auto;
+    padding:0;
+    box-sizing: content-box; 
+    text-align: left;
+    font-size: 12px;
+    box-shadow: 2px 2px 5px rgba(181, 206, 226, 0.5);
+    display:grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-gap: auto;
+    padding: 10px 0px; 
+}
+.footer1 h3{
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.footer2{
+    font-size: 10px;
+    text-align: right;
+    font-family: 'Open Sans';
+}
+
+.redes{
+    min-width: auto;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.redes a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    color:  rgb(248, 245, 245);
+    line-height: 30px;
+    background: #314652;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.redes a:hover{
+    transform: scale(1.2);
+}
+
+.contenido{
+    margin: 3px;
+}
+
+.caja{
+    display: table-cell;
+    padding: 10px;
+}
+
+.caja:nth-child(1){background: rgb(100, 110, 116);
+    width: 300px;
+
+}
+
+.caja:nth-child(2){background: rgb(247, 236, 201);}
+
+.caja:nth-child(1) h1{
+    background: rgb(100, 110, 116);
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.caja:nth-child(1)a{
+    color: white;
+}
+
+.caja:nth-child(2) h1{
+    background: rgb(247, 236, 201);
+    text-align:justify;
+    margin-bottom: 15px;
+    
+}
+
+
+.caja:nth-child(1) p{
+    text-align:justify  ;
+    color: white;
+}
+
+.caja:nth-child(1) ul{
+    color: white;
+    text-align: justify;
+}
+
+@media (min-width:768px) {
+    .caja p{ line-height: 30px;
+    }
+}
+
+@media (min-width:1024px) {
+    .contenido{
+        width: 1000px;
+        margin: auto;
+    }
+    .caja p{ line-height: 40px;
+    }
+}
+
+
+@media (min-width:1366px) {
+    .contenido{
+        width: 1200px;
+        margin: auto;
+    }
+    .caja p{ line-height: 40px;
+    }
+}
